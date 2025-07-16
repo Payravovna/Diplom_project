@@ -1,0 +1,825 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   background-color: rgba(21, 26, 38, 1);
+ }
+
+ .container {
+   background-color: rgba(21, 26, 38, 1);
+   width: 1430px;
+   margin: 0 auto;
+   padding: 0px 40px;
+   position: relative;
+ }
+ 
+
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 70px;
+   color: white;
+   padding-top: 20px;
+ }
+
+ .nav {
+   display: flex;
+   gap: 45px;
+ }
+
+ .nav a {
+   color: white;
+   text-decoration: none;
+   font-family: Inter;
+   font-size: 17px;
+   line-height: 100%;
+   letter-spacing: 0%;
+ }
+
+ .right-section {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+ }
+
+ .search-btn {
+   padding: 10px;
+   background: white;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ .login-btn {
+   background-color: rgba(72, 113, 255, 0.8);
+   color: white;
+   border: none;
+   padding: 12px 18px;
+   border-radius: 6px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+
+ .movie-page {
+   font-family: Arial, sans-serif;
+   color: white;
+   background: #10151e;
+   padding: 40px;
+   max-width: 1430px;
+   margin: 0 auto;
+ }
+
+ .top-section {
+   display: flex;
+   gap: 40px;
+   margin-bottom: 40px;
+   padding-left: 80px;
+ }
+
+ .poster {
+   width: 400px;
+   border-radius: 12px;
+ }
+
+ .info-block {
+   max-width: 900px;
+ }
+
+ .info-block h1 {
+   font-size: 36px;
+   margin-bottom: 10px;
+ }
+
+ .original-title {
+   font-size: 18px;
+   color: #aaa;
+   margin-bottom: 20px;
+ }
+
+ .description {
+   font-size: 16px;
+   margin-bottom: 20px;
+ }
+
+ .trailer-btn {
+  border: 2px solid white;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.trailer-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+ .section1 {
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+ }
+
+
+
+
+ .actors {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 30px;
+   justify-content: center;
+   padding-top: 20px;
+   width: 1400px;
+   padding-left: 60px;
+ }
+
+ .actor-card {
+   background: #1b2133;
+   width: 200px;
+   text-align: left;
+   color: white;
+
+ }
+
+ .actor-card img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+ }
+
+ .actor-ru {
+   font-size: 18px;
+   font-weight: 600;
+   margin-top: 10px;
+ }
+
+ .actor-en {
+   font-size: 14px;
+   color: #aaa;
+ }
+
+ .actor-role {
+   font-size: 14px;
+   color: rgba(242, 246, 15, 1);
+ }
+
+ .trailers-section {
+   max-width: 1290px;
+   margin: 40px auto;
+   padding: 0 20px;
+ }
+
+ .section {
+   font-family: Inter;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   position: absolute;
+   top: 1500px;
+   left: 1190px;
+   color: #9aa3b4;
+   text-decoration: none;
+   font-size: 14px;
+ }
+
+ .main-trailer {
+   position: relative;
+   width: 100%;
+   border-radius: 12px;
+   overflow: hidden;
+   margin-bottom: 25px;
+ }
+
+ .main-trailer img {
+   width: 100%;
+   height: 900px;
+ }
+
+ .title_huge {
+   font-family: Inter;
+   font-weight: 900;
+   font-size: 45px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: white;
+   padding: 20px;
+ }
+
+ .actors-section {
+   margin-top: 40px;
+ }
+
+ .actors-section h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+ }
+
+ .actor-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+   gap: 20px;
+ }
+
+ .actor-card {
+   background: #1e2330;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+ }
+
+ .actor-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+
+ .actor-name {
+   margin-top: 10px;
+   font-weight: bold;
+ }
+
+ .actor-role {
+   font-size: 14px;
+   color: #aaa;
+ }
+
+ .actors_movie {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 25px;
+   padding: 0 60px;
+   padding-top: 50px;
+
+ }
+
+ .card {
+   border-radius: 30px;
+   position: relative;
+
+ }
+
+ .card img {
+   border-radius: 15px;
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+ }
+
+ .rating {
+   background-color: #00d084;
+   color: white;
+   padding: 4px 8px;
+   border-radius: 5px;
+   font-size: 14px;
+   font-weight: bold;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+
+ .info {
+   padding: 20px;
+ }
+
+ .title {
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: rgba(242, 246, 15, 1);
+ }
+
+ .section {
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+ }
+
+ h1 {
+   font-family: Inter;
+   font-weight: 800;
+   font-size: 55px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: white;
+   padding-top: 31px;
+   padding-left: 60px;
+ }
+
+
+ .photo-gallery {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 15px;
+   max-width: 1230px;
+   margin: 30px auto;
+   padding-bottom: 20px;
+
+ }
+
+ .photo {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+
+ .wide {
+   grid-column: span 2;
+   width: 610px;
+   height: 400px;
+   object-fit: cover;
+ }
+
+ footer {
+   font-family: Inter;
+   color: #fff;
+   padding: 40px 20px;
+   text-align: center;
+
+ }
+
+ .footer-social {
+   margin-bottom: 20px;
+ }
+
+ .footer-social img {
+   width: 30px;
+   height: 30px;
+   margin: 0 10px;
+   cursor: pointer;
+ }
+
+
+
+ .footer-links {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   margin-bottom: 20px;
+ }
+
+ .footer-links a {
+   font-family: Inter;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: white;
+   text-decoration: none;
+   padding-top: 30px;
+ }
+
+ .footer-text {
+   margin: 20px;
+   font-size: 14px;
+   color: #aaa;
+ }
+
+ .footer-text a {
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 119%;
+   letter-spacing: 0%;
+   text-align: center;
+   text-decoration: underline;
+   text-decoration-style: solid;
+   text-decoration-thickness: 0%;
+   color: #aaa;
+ }
+
+
+ .similar-movies {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 25px;
+   padding: 0 60px;
+   padding-top: 50px;
+ }
+
+ .card {
+   border-radius: 30px;
+   position: relative;
+
+ }
+
+ .card img {
+   border-radius: 15px;
+   width: 100%;
+   height: 560px;
+   object-fit: cover;
+ }
+
+ .rating {
+   background-color: #00d084;
+   color: white;
+   padding: 4px 8px;
+   border-radius: 5px;
+   font-size: 14px;
+   font-weight: bold;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+
+ .info {
+   padding: 20px;
+ }
+
+ .title {
+   font-family: Inter;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   color: rgba(242, 246, 15, 1);
+ }
+
+
+ .info-block h1 {
+   font-family: Inter;
+   font-weight: 900;
+   font-size: 65px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding: 20px;
+   padding-left: 0px;
+ }
+
+ .original-title {
+   font-family: Inter;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-top: 0px;
+ }
+
+ strong {
+   color: white;
+ }
+
+ .details p {
+   color: yellow;
+   font-family: Inter;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-top: 10px;
+ }
+
+
+ .description {
+   font-family: Inter;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 167%;
+   letter-spacing: 0%;
+   color: rgba(255, 255, 255, 1);
+ }
+
+
+ .empty-msg {
+  color: #aaa;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  header {
+    padding: 20px 20px;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .trailer-btn {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+  }
+ .main-trailer{
+  width: 340px;
+  height: 200px;
+ }
+.actors{
+  width: 400px;
+}
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .wide {
+    grid-column: span 2;
+    width: 100%;
+    height: 200px;
+  }
+
+  .actors,
+  .actors_movie,
+  .similar-movies {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .actor-card img,
+  .card img {
+    height: 250px;
+  }
+
+  .card {
+    border-radius: 15px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 35px;
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title_huge {
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .section {
+    position: static;
+    padding: 20px 0;
+  }
+
+
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .poster {
+    width: 90%;
+    max-width: 300px;
+    order: 1;
+    border-radius: 10px;
+  }
+  
+  .info-block {
+    order: 2;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .info-block h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .original-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #aaa;
+  }
+  
+  .description {
+    order: 3;
+    font-size: 14px;
+    padding: 0 15px 10px;
+    color: white;
+  }
+  
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  margin: 100px auto;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .modal, .close {
+    display: none !important;
+  }
+} 
+
+
+.movie-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #1b2133;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.movie-card img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-content {
+  flex: 1;
+}
+
+.movie-content h3 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.genres {
+  font-size: 13px;
+  color: #90ee90;
+}
+
+.rating_movie {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  height: fit-content;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+.rating_movie.good {
+  background-color: green;
+  color: white;
+}
+
+.rating_movie.bad {
+  background-color: red;
+  color: white;
+}
+
+.search-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+}
+
+.search-modal.show {
+  display: block;
+}
+
+.search-modal .modal-content {
+  background: #f4f4f4;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+.search-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.3s ease;
+}
+
+.search-close:hover {
+  color: crimson;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+}
